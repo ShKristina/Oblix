@@ -1,0 +1,243 @@
+{
+  "aboutRestaurants": {
+    "west": "Enjoy views of West London alongside sophisticated and classic dishes from our rotisserie and grill; all cooked in our open kitchen.",
+    "east": "Enjoy views of East London, culinary cocktails and innovative seasonal dishes in a creative and relaxing dining and bar space.",
+    "bar": "Enjoy views of London in our Bar with a glass of champagne or wine in a creative and relaxing bar space."
+  },
+  "EastOblixEasy": {
+    "starters": [
+      "Market bowl salad (v) (n)",
+      "Jumbo prawn cocktail, gem lettuce & spicy cocktail sauce",
+      "Burrata, olives & datterini tomatoes (v) (n)"
+    ],
+    "mains": [
+      "Spicy lobster and crab linguini, chilli, garlic & lemon",
+      "Wagyu burger (200g), brioche bun, matured cheddar & fries",
+      "Crispy buttermilk chicken, mashed potatoes & garlic crisps"
+    ],
+    "desserts": [
+      "Chocolate fondant, salted caramel ice cream (v)",
+      "New york cheesecake with strawberries, rhubarb & yuzu sorbet (v)",
+      "Pecan nut & chocolate bar, crunchy bourbon ice cream (v) (n)"
+    ]
+  },
+  "EastAfternoonTea": {
+    "sandwiches": [
+      "Smoked salmon, cream cheese & rye",
+      "Free range egg & truffle",
+      "Prawn mayonnaise",
+      "Angus beef & horseradish"
+    ],
+    "scones": [
+      "Freshly baked scones",
+      "Cranberry scones",
+      "Seasonal jam",
+      "Fresh honeycomb",
+      "Clotted cream"
+    ],
+    "pastries": [
+      "Clementine & dark chocolate mousse",
+      "Pumpkin cake, spice pumpkin buttercream",
+      "Hazelnut & milk chocolate sable (n)",
+      "Chestnut & vanilla tart (n)"
+    ],
+    "tea": [
+      "Black tea ",
+      "Green tea ",
+      "White tea ",
+      "Herbal infusion ",
+      "Herbal infusion "
+    ],
+    "teaDescription": [
+      "oblix blend",
+      "monkey paw green tea - fuding, fujian province, china",
+      "white petal tea - yunnan, tarragona, gujarat",
+      "cornish manuka - tregothnan estate, cornwall, uk",
+      "hibiscus ﬂowers - satemwa estate, shire highlands, malawi"
+    ]
+  },
+  "BarMenu": {
+    "cocktails": [
+      "oblix tonix tanqueray 10 gin, lemon bitters, oblix tonix",
+      "rubus sparkler tanqueray london dry gin raspberry, lavender, lime, sparkling wine",
+      "blueberry martini ketel one vodka, blueberry, violet, lemon, egg whites",
+      "ginger peach mule bulleit bourbon, ginger peach cordial, lime, ginger beer",
+      "watermelon spritzer aperol, watermelon, lemon, sparkling wine",
+      "mulled winter bramble tanqueray gin, red port, oblix mulled dark berry cordial, lemon",
+      "kiss the rainbow tanqueray london dry gin, aperol, pink grapefruit, raspberry, peach bitters, lime",
+      "sin city whitley neil quince gin, elderflower, sparkling wine",
+      "born a star ciroc vodka, blood orange, passion fruit, vanilla, citrus, champagne",
+      "oaxacan fire sizzle (n) tapatio tequila blanco, reposado & over proof, passion fruit, pink grapefruit, velvet falernum cinnamon agave",
+      "white chocolate piña colada zacapa 23 yr old rum, pineapple, white chocolate infused coconut, lemon, caramel nest",
+      "plum rum mai tai (n) oblix rum, pineapple, blood orange, almond essence, lime, aromatic bitters",
+      "pink cadillac ketel one vodka, lychee, raspberry, lemon",
+      "banana old fashioned bulleit bourbon, tullibardine 11 yr old single malt, banana, vanilla",
+      "trickle treat tapatio reposado, muyu chinotto nero, verjus, chocolate and tonka bitters paired with a dark chocolate earl grey bonbon",
+      "beeswax barrel negroni tanqueray 10 gin, campari, oblix sweet vermouth",
+      "king of new york bulleit bourbon, oblix sweet vermouth, hibiscus",
+      "virgin territory kiwi, apple, mint, ginger, lime orange, yuzu, mandarin, lime passion fruit, blood orange, cranberry, vanilla"
+    ],
+    "cocktailsPrice": [
+      16,
+      14,
+      14,
+      16,
+      14,
+      16,
+      14,
+      18,
+      20,
+      18,
+      18,
+      18,
+      14,
+      16,
+      18,
+      15,
+      15,
+      8
+    ],
+    "beers": [
+      "NOAM BAVARIAN LAGER (340ml)",
+      "ST MUNGO LAGER (330ml)",
+      "SASSY L’INIMITABLE APPLE CIDER (330ml)",
+      "LUCKY SAINT ALCOHOL FREE (330ml)"
+    ],
+    "beerPrice": [
+      9,
+      8,
+      8,
+      5
+    ],
+    "champagne": [
+      "Billecart - Salmon, Brut reserve",
+      "NV Ruinart Blanc de Blanc, Remis",
+      "NV Billecart - Salmon, Rosé reserve"
+    ],
+    "champagnePrice": [
+      "19 / 75",
+      "24 / 115",
+      "26 / 110"
+    ],
+    "desserts": [
+      "oblix chocolate fondant, salted caramel ice cream (v)",
+      "chocolate brownie sundae with caramelised cashews (v) (n)",
+      "pecan nut & chocolate bar, crunchy bourbon ice cream (v) (n)",
+      "toffee banana & crème brûlée tart, coffee ice cream (v)",
+      "new york cheesecake with strawberries, rhubarb & yuzu sorbet (v)"
+    ]
+  },
+
+  "WestCarteMenu": {
+    "snacks": [
+      "seasonal crudités (v)",
+      "seared smoked salmon",
+      "iberico bellota ham (50g)"
+    ],
+    "snacksPrice": [
+      9,
+      10,
+      21
+    ],
+    "rawbar": [
+      "marinated tuna slices avocado, garlic & chilli",
+      "beef carpaccio mustard dressing, parmesan & herbs",
+      "steak tartare aged cheddar & beef tomato",
+      "diver scallops truffle & artichoke"
+    ],
+    "rawbarPrice": [
+      19,
+      22,
+      22,
+      25
+    ],
+    "starters": [
+      "crispy squid chilli & lime",
+      "truffle flatbread pancetta & ricotta",
+      "crab cake watercress, wasabi mayo",
+      "smoked salmon flatbread imperial caviar & cream cheese"
+    ],
+    "startersPrice": [
+      17,
+      23,
+      24,
+      29
+    ],
+    "rotisserieAndGrill": [
+      "wagyu burger (200g) brioche bun, matured cheddar & truffle fries",
+      "line caught seabass (200g) lemon hollandaise",
+      "bbq black cod coriander salsa",
+      "whole lobster lemon verbena & garlic butter",
+      "whole dover sole garlic, butter & capers",
+      "whole rotisserie chicken garlic, lemon & rosemary"
+    ],
+    "rotisserieAndGrillPrice": [
+      37,
+      39,
+      45,
+      59,
+      49,
+      58
+    ],
+    "steaks": [
+      "signature oblix pepper steak two tenderloin medallions & creamy peppercorn sauce",
+      "sirloin (300g) & red wine sauce",
+      "rib-eye (300g) & chimichurri",
+      "selection of sauces béarnaise, chimichurri, red wine sauce"
+    ],
+    "steaksPrice": [
+      48,
+      44,
+      46,
+      5
+    ]
+  },
+  "WestRoseBrunch": {
+    "roseBrunch": "selection of starters & a choice of one main course per person followed by a dessert platter for the table includes a pairing of rose, selected wines, cocktails & soft drinks",
+    "champagneBrunch": "selection of starters & a choice of one main course per person, followed by a dessert platter for the table paired with champagne, wines, cocktails & soft drinks",
+    "starters": [
+      "market bowl salad (v) (n)",
+      "seasonal crudité remoulade sauce",
+      "burrata olives & datterini tomatoes (v) (n)",
+      "caesar salad crispy cured ham & parmesan",
+      "jumbo prawn cocktail gem lettuce & spicy cocktail sauce",
+      "truffle flatbread pancetta & ricotta",
+      "crispy squid chilli & lime",
+      "marinated tuna slices, avocado, garlic & chilli"
+    ],
+    "sides": [
+      "fries (v)",
+      "market bowl salad (v) (n)",
+      "mashed potatoes & garlic crisps (v)",
+      "tenderstem broccoli preserved lemon & chilli (v)",
+      "truffle & parmesan fries béarnaise sauce",
+      "green beans tomato & shallot vinaigrette (v)",
+      "triple cooked chips truffle mayonnaise (v)"
+    ],
+    "sidesPrice": [
+      7,
+      7,
+      8,
+      8,
+      11,
+      8,
+      10
+    ]
+  },
+  "WestDesserts": {
+    "desserts": [
+      "Toffee banana & crème brûlée tart, coffee ice cream (v)",
+      "Pecan nut & chocolate bar, crunchy bourbon ice cream (v) (n)",
+      "New york cheesecake with mango & ginger sorbet (v)",
+      "Chocolate brownie sundae with caramelised cashews (v) (n)",
+      "Croquembouche to share white chocolate tonka & raspberry"
+    ],
+    "dessertsPrice": [
+      15,
+      15,
+      15,
+      15,
+      28
+    ]
+  }
+}
