@@ -1,0 +1,18 @@
+.page-logotype{
+    display: flex;
+    line-height: 1.5em;
+    width: $full-width;
+    justify-content: center;
+}
+.logo-svg {
+    flex: 30%;
+    margin: -10px auto -7px auto ;
+    width: $full-width;
+    display: flex;
+    justify-content: center;
+}
+.line-before, .line-after{
+    border-bottom: 2px solid #d6d6d6;
+    flex: 40%;
+    margin-bottom: 16px;
+}

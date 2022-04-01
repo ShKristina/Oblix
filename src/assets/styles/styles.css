@@ -1,0 +1,533 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "RockwellStd";
+  src: url("../assets/fonts/RockwellStd.eot");
+  src: local("☺"), url("../assets/fonts/RockwellStd.woff") format("woff"), url("../assets/fonts/RockwellStd.ttf") format("truetype"), url("../assets/fonts/RockwellStd.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RockwellStd-Light";
+  src: url("../assets/fonts/RockwellStd-Light.eot");
+  src: local("☺"), url("../assets/fonts/RockwellStd-Light.woff") format("woff"), url("../assets/fonts/RockwellStd-Light.ttf") format("truetype"), url("../assets/fonts/RockwellStd-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: url("../assets/fonts/Muli-ExtraBold.eot");
+  src: local("☺"), url("../assets/fonts/Muli-ExtraBold.woff") format("woff"), url("../assets/fonts/Muli-ExtraBold.ttf") format("truetype"), url("../assets/fonts/Muli-ExtraBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("../assets/fonts/Muli-Bold.eot");
+  src: local("☺"), url("../assets/fonts/Muli-Bold.woff") format("woff"), url("../assets/fonts/Muli-Bold.ttf") format("truetype"), url("../assets/fonts/Muli-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: RockwellStd-Light, RockwellStd, serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: #140906;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: Muli-ExtraBold;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33em;
+  margin: 0 0 20px;
+  opacity: 0.5;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 865px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: normal;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(20, 9, 6, 0.5);
+  border-bottom-style: solid;
+  font-family: Muli-ExtraBold;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-block-start: 0;
+}
+
+svg {
+  font-size: 56px;
+  height: 84px;
+  width: 120px;
+}
+@media screen and (max-width: 865px) {
+  svg {
+    max-height: 64px;
+    width: calc(60px + 20 * (100vw - 320px) / 545);
+  }
+}
+
+p {
+  margin: 0 auto 0 0;
+  font-weight: 300;
+}
+p .item-description {
+  color: #a59e9e;
+}
+
+.demo {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(20, 9, 6, 0.1);
+  top: 401px;
+  position: absolute;
+  height: 99px;
+}
+@media screen and (max-width: 865px) {
+  .demo {
+    height: 82px;
+    top: 378px;
+  }
+}
+@media screen and (max-width: 865px) and (max-width: 736px) {
+  .demo {
+    top: 258px;
+  }
+}
+
+.main-container {
+  max-width: 1300px;
+  display: flex;
+  height: 99px;
+}
+@media screen and (max-width: 865px) {
+  .main-container {
+    height: 82px;
+  }
+}
+
+.tab-button.active {
+  font-weight: bold;
+  border-bottom: #fff;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+
+.tab-button {
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 55px;
+  margin-right: 59px;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+  top: 50%;
+  font-family: RockwellStd-Light, RockwellStd, serif;
+  font-size: 50px;
+}
+@media screen and (max-width: 1055px) {
+  .tab-button {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1055px) and (max-width: 865px) {
+  .tab-button {
+    margin-top: 15px;
+    margin-right: 29px;
+  }
+}
+@media screen and (max-width: 1055px) and (max-width: 865px) and (max-width: 735px) {
+  .tab-button {
+    font-size: 38px;
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 1055px) and (max-width: 865px) and (max-width: 735px) and (max-width: 320px) {
+  .tab-button {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  top: 20px;
+}
+@media screen and (max-width: 865px) {
+  .line {
+    top: 8px;
+  }
+}
+@media screen and (max-width: 865px) and (max-width: 735px) {
+  .line {
+    top: 4px;
+  }
+}
+
+.lineDisplay {
+  display: none;
+}
+
+.cuisine {
+  display: flex;
+  justify-content: center;
+  font-family: Muli-ExtraBold;
+}
+@media screen and (max-width: 865px) {
+  .cuisine {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+.cuisine__button {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 24px 20px;
+  border: 4px solid #fff;
+  margin: 0 4px 10px;
+  opacity: 0.2;
+  text-align: center;
+}
+@media screen and (max-width: 865px) {
+  .cuisine__button {
+    margin-bottom: 10px;
+  }
+}
+
+.cuisine__button.active {
+  opacity: 1;
+}
+
+.head-title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+@media (max-width: 865px) {
+  .head-title {
+    height: 460px;
+  }
+}
+@media (max-width: 865px) and (max-width: 736px) {
+  .head-title {
+    height: 340px;
+  }
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+@media (max-width: 865px) {
+  .restaurant-image {
+    height: 460px;
+  }
+}
+@media (max-width: 865px) and (max-width: 737px) {
+  .restaurant-image {
+    height: 340px;
+  }
+}
+
+.head-title__temp {
+  max-width: 1300px;
+  bottom: 145px;
+  position: relative;
+  height: auto;
+}
+@media (max-width: 865px) {
+  .head-title__temp {
+    bottom: 125px;
+  }
+}
+
+.footer-image {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 865px) {
+  .footer-image {
+    height: 150px;
+  }
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 865px) {
+  .footer {
+    height: 150px;
+  }
+}
+
+.main-container, .head-title__temp, .menus-restaurant-main {
+  margin: 0 auto;
+}
+@media screen and (max-width: 1480px) {
+  .main-container, .head-title__temp, .menus-restaurant-main {
+    margin: 0 70px;
+  }
+}
+@media screen and (max-width: 1480px) and (max-width: 1055px) {
+  .main-container, .head-title__temp, .menus-restaurant-main {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 1480px) and (max-width: 1055px) and (max-width: 736px) {
+  .main-container, .head-title__temp, .menus-restaurant-main {
+    margin: 0 calc(20px + 25 * (100vw - 320px) / 416);
+  }
+}
+@media screen and (max-width: 1480px) and (max-width: 1055px) and (max-width: 736px) and (max-width: 672px) {
+  .main-container, .head-title__temp, .menus-restaurant-main {
+    margin: 0 20px;
+  }
+}
+
+.description-content {
+  width: 745px;
+}
+@media screen and (max-width: 1105px) {
+  .description-content {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1105px) and (max-width: 865px) {
+  .description-content {
+    width: 745px;
+  }
+}
+@media screen and (max-width: 1105px) and (max-width: 865px) and (max-width: 845px) {
+  .description-content {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1105px) and (max-width: 865px) and (max-width: 845px) and (max-width: 735px) {
+  .description-content {
+    width: 605px;
+  }
+}
+@media screen and (max-width: 1105px) and (max-width: 865px) and (max-width: 845px) and (max-width: 735px) and (max-width: 672px) {
+  .description-content {
+    width: auto;
+  }
+}
+
+.page-logotype {
+  display: flex;
+  line-height: 1.5em;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo-svg {
+  flex: 30%;
+  margin: -10px auto -7px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.line-before, .line-after {
+  border-bottom: 2px solid #d6d6d6;
+  flex: 40%;
+  margin-bottom: 16px;
+}
+
+.page-top {
+  display: flex;
+  margin-top: 52px;
+  padding-bottom: 73px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #D6D6D6FF;
+}
+
+.top-title {
+  font-family: RockwellStd;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.26em;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 865px) {
+  .top-title {
+    width: auto;
+  }
+}
+
+.page-main {
+  height: auto;
+  width: 100%;
+}
+
+.page-main__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 70px;
+}
+@media screen and (max-width: 865px) {
+  .page-main__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  grid-area: auto;
+  padding-top: 71px;
+  display: block;
+  box-sizing: border-box;
+  font-family: RockwellStd-Light;
+  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  font-size: 21px;
+}
+@media screen and (max-width: 865px) {
+  .item {
+    font-size: 18px;
+  }
+}
+
+.item-price {
+  color: #a59e9e;
+  font-family: Muli-Bold;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  height: 31.5px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 865px) {
+  .item-price {
+    height: 27px;
+  }
+}
+
+.item-price__title {
+  color: #a59e9e;
+  font-family: Muli-Bold;
+  font-size: 22px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  height: auto;
+}
+
+.item-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: auto;
+}
+
+.menus-restaurant-main {
+  max-width: 1300px;
+  padding-top: 70px;
+  padding-bottom: 91px;
+}
+@media screen and (max-width: 865px) {
+  .menus-restaurant-main {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-description {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 865px) {
+  .main-description {
+    margin-bottom: 40px;
+  }
+}
+
+.description-content {
+  margin-right: 21px;
+  letter-spacing: 0.023em;
+  font-weight: 300;
+  height: auto;
+  line-height: 1.5em;
+  font-size: 21px;
+}
+@media screen and (max-width: 865px) {
+  .description-content {
+    font-size: 18px;
+    margin-right: 0;
+  }
+}
+
+.panel-menu__cuisine {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 865px) {
+  .panel-menu__cuisine {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+  }
+}
+
+.panel-menu__menu {
+  background-color: #fff;
+  color: #140906;
+  padding: 48px 70px 70px;
+}
+@media screen and (max-width: 737px) {
+  .panel-menu__menu {
+    padding: 20px 20px 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

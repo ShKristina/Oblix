@@ -1,5 +1,5 @@
 .head-title {
-  width: 100%;
+  width: $full-width;
   margin: 0;
   padding: 0;
   height: 500px;
@@ -11,7 +11,7 @@
   }
 }
 .restaurant-image {
-  width: 100%;
+  width: $full-width;
   height: 500px;
   position: relative;
   object-fit: cover;
@@ -23,9 +23,6 @@
     }
   }
 }
-
-
-
 .head-title__temp {
   max-width: 1300px;
   bottom: 145px;
@@ -33,5 +30,15 @@
   height: auto;
   @media (max-width: 865px) {
     bottom: 125px
+  }
+}
+
+.footer-image {
+  position: relative;
+  height: 280px;
+  width: $full-width;
+  object-fit: cover;
+  @media screen and (max-width: 865px) {
+    height: 150px
   }
 }

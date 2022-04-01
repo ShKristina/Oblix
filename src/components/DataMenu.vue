@@ -1,11 +1,13 @@
 <template>
   <div class="menus-restaurant-main">
-    <div class="main-description" >
-      <div class="description-content"  v-if="!!activeId"> {{oblix[activeId].description}}</div>
+    <div class="main-description">
+      <div class="description-content"  v-if="!!activeId">
+        {{oblix[activeId].description}}
+      </div>
     </div>
     <div class="panel-menu">
       <div class="panel-menu__cuisine">
-        <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" />
+        <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" ref="typeMenu"/>
       </div>
 
       <div class="panel-menu__menu" >
@@ -26,29 +28,23 @@ export default {
   name: 'DataMenu',
   data(){
     return{
-      oblixMenuItem: 0,
       cuisineItems:{},
       tabs:[],
     }
   },
   props:['oblix', 'activeId'],
   watch:{
-    oblix: function (newVal, oldVal) {
-      this.setData()
-      console.log(oldVal, newVal)
-    },
-    activeId: function (newVal, oldVal) {
-      console.log(oldVal, newVal)
+    activeId: function (newVal) {
+      this.setData(newVal)
+      this.$refs.typeMenu.reset()
     }
   },
   methods:{
     changeMenuTab(value){
-      this.oblixMenuItem = value
       this.cuisineItems=this.oblix[this.activeId].cuisines[value]
-      console.log(this.cuisineItems, value)
     },
-    setData(){
-      this.tabs = this.oblix[this.activeId].cuisines.map(item => item.сuisine_title)
+    setData(newVal){
+      this.tabs = this.oblix[newVal].cuisines.map(item => item.сuisine_title)
       this.changeMenuTab(0)
     }
   }

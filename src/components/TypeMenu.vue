@@ -5,7 +5,7 @@
         v-for="(tab, index) in tabs"
         :key="index"
         :class="['active-menu', { active: this.activeTab === index }]"
-        @click="changeMenuTab(tab)"
+        @click="changeMenuTab(index)"
     >
       {{ tab }}
     </div>
@@ -21,7 +21,7 @@ export default {
     }
   },
   props:{
-    tabs:{type: Array, default: () => ([])}
+    tabs:{type: Array, default: () => ([])},
   },
   methods:{
     changeMenuTab(tab){
@@ -30,8 +30,10 @@ export default {
     },
     setActiveTab(){
       this.currentTab = this.tabs.length ? this.tabs[0] : ''
+    },
+    reset() {
+      this.activeTab = 0
     }
   }
 }
-
 </script>
