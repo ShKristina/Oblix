@@ -16,8 +16,6 @@
       </g>
     </svg>
   </div>
-
-
   <div class="line-after"></div>
 </template>
 
