@@ -1,25 +1,25 @@
 <template>
-    <div class="v-image-restaurant">
+    <div class="head-title">
         <img
             v-if="activeId === 'bar'"
-            class="v-image-restaurant__image o-header"
+            class="restaurant-image"
             src="../assets/images/Restaurant-and-Bar.jpg"
             alt="Dish picture"
         />
       <img
           v-else-if="activeId==='east'"
-          class="v-image-restaurant__image"
+          class="restaurant-image"
           src="../assets/images/lunch-zeplin-zip.jpg"
           alt="Dish picture"
       />
       <img
           v-else
-          class="v-image-restaurant__image"
+          class="restaurant-image"
           src="../assets/images/menus-1.jpg"
           alt="Dish picture"
       />
-      <div class="v-image-restaurant__title o-main-container o-header">
-        <h1 >{{ title }}</h1>
+      <div class="head-title__temp">
+        <h1 >{{ temp }}</h1>
       </div>
     </div>
 </template>
@@ -29,7 +29,7 @@ export default {
   name: "ImageRestaurant",
   data() {
     return {
-      title: "CHOOSE MENU",
+      temp: "CHOOSE MENU",
     };
   },
   props: {
@@ -38,39 +38,41 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.v-image-restaurant {
-  height: 500px;
+<style lang="sass">
 
-  @media(max-width: 865px) {
-    height: 460px;
 
-    @media(max-width: 736px) {
+.head-title__temp
+  max-width: 1300px
+  bottom: 145px
+  @media (max-width: 865px)
+    bottom: 125px
+  position: relative
+  height: auto
+
+
+.head-title
+  height: 500px
+  @media(max-width: 865px)
+    height: 460px
+    @media(max-width: 736px)
       height: 340px
-    }
-  }
+  width: 100%
+  margin: 0
+  padding: 0
 
-  &__image {
-    width: $full-width;
-    height: 500px;
-    object-fit: cover;
-    filter: brightness(60%);
+.restaurant-image
+  width: 100%
+  height: 500px
+  @media(max-width: 865px)
+    height: 460px
+    @media(max-width: 737px)
+      height: 340px
+  position: relative
+  object-fit: cover
+  filter: brightness(60%)
 
-    @media(max-width: 865px) {
-      height: 460px;
 
-      @media(max-width: 737px) {
-        height: 340px
-      }
-    }
-  }
 
-  &__title {
-    bottom: 145px;
 
-    @media (max-width: 865px) {
-      bottom: 125px
-    }
-  }
-}
+
 </style>

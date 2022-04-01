@@ -1,68 +1,48 @@
 body {
   font-family: $font-stack;
-  color: $white-color;
-  background: $dark-orange-color;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  background: $main-color;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
   font-family: Muli-ExtraBold;
-  color: $white-color;
-  line-height: 1.33em;
-  padding-bottom: 20px;
-  opacity: 0.5;
-  letter-spacing: .03em;
+  color: #fff;
   font-size: 18px;
-
   @media (max-width: 865px) {
     font-size: 16px
   }
-}
-
-h3 {
-  font-family: RockwellStd;
-  font-size: 40px;
-  color: $dark-brown-color;
-  line-height: 1.26em;
+  font-weight: 700;
+  line-height: 1.33em;
+  margin: 0 0 20px;
+  opacity: 0.5;
+  letter-spacing: .03em
 }
 
 h4 {
-  color: $dark-brown-color;
   font-size: 22px;
+  font-weight: 400;
   letter-spacing: .03em;
   line-height: normal;
-  font-family: Muli-ExtraBold;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
   border-bottom-width: 2px;
   border-bottom-color: rgba(20,9,6,0.5);
   border-bottom-style: solid;
-}
-
-p {
-  color: $dark-brown-color;
-  margin-right: auto;
-  line-height: 1.5em;
-  font-size: 21px;
-
-  @media screen and (max-width: 865px) {
-    font-size: 18px;
-  }
-}
-
-span {
-  color: $opal-grey-color;
+  font-family: Muli-ExtraBold;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-block-start: 0
 }
 
 
-svg {
+svg{
   font-size: 56px;
   height: 84px;
   width: 120px;
-  color: $dark-brown-color;
-
-  @media screen and (max-width: 865px) {
+  @media screen and (max-width: 865px){
     max-height: 64px;
-    width: 60px;
+    width: calc(60px + (120 - 100)*((100vw - 320px) / ( 865 - 320)));
   }
 }
-

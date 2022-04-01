@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="header">
+      <ImageRestaurant :activeId="activeId" />
+      <ButtonMenu v-on:buttonChange="changeTab" :tabs="tabs" />
+    </div>
+
+    <div class="container">
+     <DataMenu :oblix="oblix" :activeId="activeId"/>
+    </div>
+
+    <div class="footer">
+      <img src="./assets/images/foot.jpg" class="footer-image">
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import axios from "axios";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      activeId:'',
+      oblix:{},
+      tabs:[],
+    }
+  },
+  methods:{
+    changeTab(value){
+      this.activeId = value
+    },
+  },
+  mounted() {
+    axios
+        .get('http://localhost:3000/oblix')
+        .then(response => {this.oblix = response.data;
+          this.tabs = Object.keys(response.data)
+          this.activeId= this.tabs[0]
+        })
+        .catch(error => console.log(error));
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+
 </style>

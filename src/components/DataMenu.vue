@@ -1,80 +1,60 @@
 <template>
-  <div class="o-restaurant-container o-main-container">
-    <div class="v-main-description">
-      <div class="v-main-description__content"  v-if="!!activeId">
-        {{oblix[activeId].description}}
+  <div class="menus-restaurant-main">
+    <div class="main-description" >
+      <div class="description-content"  v-if="!!activeId"> {{oblix[activeId].description}}</div>
+    </div>
+    <div class="panel-menu">
+      <div class="panel-menu__cuisine">
+        <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" />
+      </div>
+
+      <div class="panel-menu__menu" >
+        <div class="page-logotype">
+          <LogoType />
+        </div>
+        <div v-if="!!Object.keys(cuisineItems).length">
+          <MenuItem :cuisineItems="cuisineItems"/>
+        </div>
       </div>
     </div>
-
-    <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" ref="typeMenu"/>
-
-    <div class="v-menu-page" >
-      <LogoType />
-      <div v-if="!!Object.keys(cuisineItems).length">
-        <MenuItem :cuisineItems="cuisineItems"/>
-      </div>
-    </div>
-
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'DataMenu',
-  data() {
-    return {
-      cuisineItems: {},
-      tabs: [],
+  data(){
+    return{
+      oblixMenuItem: 0,
+      cuisineItems:{},
+      tabs:[],
     }
   },
-  props: ['oblix', 'activeId'],
-  watch: {
-    activeId: function (newVal) {
-      this.setData(newVal);
-      this.$refs.typeMenu.reset();
-    }
-  },
-  methods: {
-    changeMenuTab(value) {
-      this.cuisineItems=this.oblix[this.activeId].cuisines[value];
+  props:['oblix', 'activeId'],
+  watch:{
+    oblix: function (newVal, oldVal) {
+      this.setData()
+      console.log(oldVal, newVal)
     },
-    setData(newVal) {
-      this.tabs = this.oblix[newVal].cuisines.map(item => item.сuisine_title);
-      this.changeMenuTab(0);
+    activeId: function (newVal, oldVal) {
+      console.log(oldVal, newVal)
+    }
+  },
+  methods:{
+    changeMenuTab(value){
+      this.oblixMenuItem = value
+      this.cuisineItems=this.oblix[this.activeId].cuisines[value]
+      console.log(this.cuisineItems, value)
+    },
+    setData(){
+      this.tabs = this.oblix[this.activeId].cuisines.map(item => item.сuisine_title)
+      this.changeMenuTab(0)
     }
   }
 }
 </script>
 
-<style lang="scss">
-.v-main-description {
-  margin-bottom: 40px;
+<style>
 
-  @media screen and (min-width: 865px) {
-    margin-bottom: 70px;
-  }
-
-  &__content {
-    padding-bottom: 24px;
-    letter-spacing: .023em;
-    line-height: 1.5em;
-    font-size: 18px;
-
-    @media screen and (min-width: 865px) {
-      width: 745px;
-      font-size: 21px;
-    }
-  }
-}
-
-.v-menu-page {
-  background-color: $white-color;
-  padding: 70px;
-  padding-top: 48px;
-
-  @media screen and (max-width: 737px) {
-    padding: 20px;
-    padding-bottom: 30px;
-  }
-}
 </style>

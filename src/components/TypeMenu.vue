@@ -1,14 +1,14 @@
 <template>
-  <div class="o-btn-container">
-    <button
-        class="c-btn"
+  <div class="cuisine">
+    <div
+        class="cuisine__button"
         v-for="(tab, index) in tabs"
         :key="index"
-        :class="[{ 'c-btn--active': this.activeTab === index }]"
-        @click="changeMenuTab(index)"
+        :class="['active-menu', { active: this.activeTab === index }]"
+        @click="changeMenuTab(tab)"
     >
       {{ tab }}
-    </button>
+    </div>
   </div>
 </template>
 
@@ -20,17 +20,18 @@ export default {
       activeTab: 0,
     }
   },
-  props: {
-    tabs: {type: Array, default: () => ([])},
+  props:{
+    tabs:{type: Array, default: () => ([])}
   },
-  methods: {
-    changeMenuTab(tab) {
-      this.activeTab = tab;
-      this.$emit('menuButtonChange', tab);
+  methods:{
+    changeMenuTab(tab){
+      this.activeTab=tab
+      this.$emit('menuButtonChange', tab)
     },
-    reset() {
-      this.activeTab = 0;
+    setActiveTab(){
+      this.currentTab = this.tabs.length ? this.tabs[0] : ''
     }
   }
 }
+
 </script>
