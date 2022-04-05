@@ -1,0 +1,46 @@
+.item {
+  grid-area: auto;
+  padding-top: 71px;
+  display: block;
+  box-sizing: border-box;
+  font-family: RockwellStd-Light;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+  font-size: 21px;
+  @media screen and (max-width: 865px) {
+    font-size: 18px;
+  }
+}
+.item-price__title {
+  color: $grey-color;
+  font-family: Muli-Bold;
+  font-size: 22px;
+  line-height: 1.5em;
+  letter-spacing: .02em;
+  height: auto;
+}
+.item-price {
+  color: $grey-color;
+  font-family: Muli-Bold;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: .02em;
+  height: 31.5px;
+  @media screen and (max-width:865px) {
+    height: 27px
+  }
+  margin-left: 15px;
+}
+.item-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: auto;
+}
+.item-description {
+  @extend p;
+  color: $grey-color;
+}

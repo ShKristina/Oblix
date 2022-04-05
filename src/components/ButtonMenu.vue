@@ -1,15 +1,14 @@
 <template>
-  <div class="demo">
-    <div class="main-container" >
+  <div class="main-container">
+    <div class="main-button">
       <div
-          class="tab-button"
+          class="button"
           v-for="tab in tabs"
           :key="tab"
           :class="['active-button', { active: currentTab === tab }]"
           @click="changeTab(tab)"
       >
           {{ tab }}
-        <div :class="['line', currentTab !== tab && 'lineDisplay']" />
       </div>
     </div>
   </div>
@@ -23,23 +22,17 @@ export default {
       currentTab: 'west'
     }
   },
-  props:{
-    tabs: {type:Array, default: () => ([])}
+  props: {
+    tabs: { type:Array, default: () => ([])}
   },
-  methods:{
-    changeTab(tab){
-      this.currentTab=tab
-      this.$emit('buttonChange', tab)
-    },
-    setActiveTab(){
-      this.currentTab = this.tabs.length ? this.tabs[0] : ''
+  methods: {
+    changeTab(tab) {
+      this.currentTab = tab;
+      this.$emit('buttonChange', tab);
     }
   }
 }
 </script>
-
-
-
 
 <style lang="scss">
 </style>
