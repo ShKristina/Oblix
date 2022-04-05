@@ -1,0 +1,17 @@
+.header {
+  width: $full-width;
+  position: relative
+}
+.container {
+  max-width: $full-width;
+}
+.footer {
+  width: $full-width;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 865px) {
+    height: 150px
+  }
+}
+

@@ -1,21 +1,4 @@
-.header {
-  width: $full-width;
-  position: relative
-}
-.container {
-  max-width: $full-width;
-}
-.footer {
-  width: $full-width;
-  height: 280px;
-  margin: 0;
-  padding: 0;
-  @media screen and (max-width: 865px) {
-    height: 150px
-  }
-}
-
-.main-container, .head-title__temp, .menus-restaurant-main {
+.main-button, .head-title__temp, .menus-restaurant-main {
   margin: 0 auto;
   @media screen and (max-width: 1480px) {
     margin: 0 70px;
@@ -30,7 +13,6 @@
     }
   }
 }
-
 .description-content {
   width: 745px;
   @media screen and (max-width: 1105px){

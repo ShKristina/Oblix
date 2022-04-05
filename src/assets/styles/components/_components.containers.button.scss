@@ -1,0 +1,34 @@
+.main-container {
+  display: block;
+  width: $full-width;
+  margin: 0 auto;
+  background-color: rgba(20, 9, 6, 0.1);
+  top: 401px;
+  position: absolute;
+  height: 99px;
+  @media screen and (max-width: 865px) {
+    height: 82px;
+    top: 378px;
+    @media screen and (max-width: 736px) {
+      top: 258px
+    }
+  }
+}
+.main-button {
+  max-width: 1300px;
+  display: flex;
+  height: 99px;
+  @media screen and (max-width: 865px) {
+    height: 82px;
+  }
+}
+
+.cuisine {
+  display: flex;
+  justify-content: center;
+  font-family: Muli-ExtraBold;
+  @media screen and (max-width: 865px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

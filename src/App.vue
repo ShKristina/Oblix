@@ -14,28 +14,27 @@
 </template>
 
 <script>
-
 import axios from "axios";
 export default {
   name: 'App',
-  data(){
+  data() {
     return{
-      activeId:'',
-      oblix:{},
-      tabs:[],
+      activeId: '',
+      oblix: {},
+      tabs: [],
     }
   },
-  methods:{
-    changeTab(value){
-      this.activeId = value
+  methods: {
+    changeTab(value) {
+      this.activeId = value;
     },
   },
   mounted() {
     axios
         .get('http://localhost:3000/oblix')
         .then(response => {this.oblix = response.data;
-          this.tabs = Object.keys(response.data)
-          this.activeId= this.tabs[0]
+          this.tabs = Object.keys(response.data);
+          this.activeId= this.tabs[0];
         })
         .catch(error => console.log(error));
   }
@@ -43,5 +42,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>

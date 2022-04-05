@@ -23,34 +23,32 @@
 </template>
 
 <script>
-
 export default {
   name: 'DataMenu',
-  data(){
-    return{
-      cuisineItems:{},
-      tabs:[],
+  data() {
+    return {
+      cuisineItems: {},
+      tabs: [],
     }
   },
-  props:['oblix', 'activeId'],
-  watch:{
+  props: ['oblix', 'activeId'],
+  watch: {
     activeId: function (newVal) {
-      this.setData(newVal)
-      this.$refs.typeMenu.reset()
+      this.setData(newVal);
+      this.$refs.typeMenu.reset();
     }
   },
-  methods:{
-    changeMenuTab(value){
-      this.cuisineItems=this.oblix[this.activeId].cuisines[value]
+  methods: {
+    changeMenuTab(value) {
+      this.cuisineItems=this.oblix[this.activeId].cuisines[value];
     },
-    setData(newVal){
-      this.tabs = this.oblix[newVal].cuisines.map(item => item.сuisine_title)
-      this.changeMenuTab(0)
+    setData(newVal) {
+      this.tabs = this.oblix[newVal].cuisines.map(item => item.сuisine_title);
+      this.changeMenuTab(0);
     }
   }
 }
 </script>
 
 <style>
-
 </style>

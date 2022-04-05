@@ -1,34 +1,4 @@
-.demo {
-  display: block;
-  width: $full-width;
-  margin: 0 auto;
-  background-color: rgba(20, 9, 6, 0.1);
-  top: 401px;
-  position: absolute;
-  height: 99px;
-  @media screen and (max-width: 865px) {
-    height: 82px;
-    top: 378px;
-    @media screen and (max-width: 736px) {
-      top: 258px
-    }
-  }
-}
-.main-container {
-  max-width: 1300px;
-  display: flex;
-  height: 99px;
-  @media screen and (max-width: 865px) {
-    height: 82px;
-  }
-}
-.tab-button.active {
-  font-weight: bold;
-  border-bottom: $primary-color;
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-}
-.tab-button {
+.button {
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -57,31 +27,11 @@
     }
   }
 }
-.line {
-  position: relative;
-  width: $full-width;
-  height: 4px;
-  background-color: $primary-color;
-  top: 20px;
-  @media screen and (max-width: 865px) {
-    top: 8px;
-    @media screen and (max-width: 735px) {
-      top: 4px
-    }
-  }
-}
-.lineDisplay {
-  display: none
-}
-
-.cuisine {
-  display: flex;
-  justify-content: center;
-  font-family: Muli-ExtraBold;
-  @media screen and (max-width: 865px) {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
+.button.active {
+  font-weight: bold;
+  border-bottom: $primary-color;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
 }
 .cuisine__button {
   text-transform: uppercase;

@@ -22,6 +22,19 @@ h1 {
   letter-spacing: .03em
 }
 
+h3 {
+  font-family: RockwellStd;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.26em;
+  margin: 0;
+  width: $full-width;
+  height: auto;
+  @media screen and (max-width: 865px) {
+    width: auto
+  }
+}
+
 h4 {
   font-size: 22px;
   font-weight: 400;
@@ -36,7 +49,7 @@ h4 {
   margin-block-start: 0
 }
 
-svg{
+svg {
   font-size: 56px;
   height: 84px;
   width: 120px;
@@ -46,10 +59,7 @@ svg{
   }
 }
 
-p{
+p {
   margin: 0 auto 0 0;
   font-weight: 300;
-  .item-description{
-    color: $grey-color;
-  }
 }

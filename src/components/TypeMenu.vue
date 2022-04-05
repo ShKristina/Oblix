@@ -20,19 +20,16 @@ export default {
       activeTab: 0,
     }
   },
-  props:{
-    tabs:{type: Array, default: () => ([])},
+  props: {
+    tabs: {type: Array, default: () => ([])},
   },
-  methods:{
-    changeMenuTab(tab){
-      this.activeTab=tab
-      this.$emit('menuButtonChange', tab)
-    },
-    setActiveTab(){
-      this.currentTab = this.tabs.length ? this.tabs[0] : ''
+  methods: {
+    changeMenuTab(tab) {
+      this.activeTab = tab;
+      this.$emit('menuButtonChange', tab);
     },
     reset() {
-      this.activeTab = 0
+      this.activeTab = 0;
     }
   }
 }
