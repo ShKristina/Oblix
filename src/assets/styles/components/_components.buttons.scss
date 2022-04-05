@@ -57,23 +57,6 @@
     }
   }
 }
-.line {
-  position: relative;
-  width: $full-width;
-  height: 4px;
-  background-color: $primary-color;
-  top: 20px;
-  @media screen and (max-width: 865px) {
-    top: 8px;
-    @media screen and (max-width: 735px) {
-      top: 4px
-    }
-  }
-}
-.lineDisplay {
-  display: none
-}
-
 .cuisine {
   display: flex;
   justify-content: center;

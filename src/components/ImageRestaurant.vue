@@ -40,7 +40,6 @@ export default {
 
 <style lang="sass">
 
-
 .head-title__temp
   max-width: 1300px
   bottom: 145px
@@ -48,7 +47,6 @@ export default {
     bottom: 125px
   position: relative
   height: auto
-
 
 .head-title
   height: 500px
@@ -70,9 +68,5 @@ export default {
   position: relative
   object-fit: cover
   filter: brightness(60%)
-
-
-
-
 
 </style>

@@ -73,3 +73,7 @@
   align-items: baseline;
   height: auto;
 }
+.item-description{
+  @extend p;
+  color: $grey-color;
+}
