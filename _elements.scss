@@ -1,0 +1,52 @@
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  background: $main-color;
+  width: $full-width;
+  height: 100%;
+}
+
+h1 {
+  font-family: Muli-ExtraBold;
+  color: $primary-color;
+  font-size: 18px;
+  @media (max-width: 865px) {
+    font-size: 16px
+  }
+  font-weight: 700;
+  line-height: 1.33em;
+  margin: 0 0 20px;
+  opacity: 0.5;
+  letter-spacing: .03em
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: normal;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(20,9,6,0.5);
+  border-bottom-style: solid;
+  font-family: Muli-ExtraBold;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-block-start: 0
+}
+
+svg{
+  font-size: 56px;
+  height: 84px;
+  width: 120px;
+  @media screen and (max-width: 865px){
+    max-height: 64px;
+    width: calc(60px + (120 - 100)*((100vw - 320px) / ( 865 - 320)));
+  }
+}
+
+p {
+  margin: 0 auto 0 0;
+  font-weight: 300;
+}
