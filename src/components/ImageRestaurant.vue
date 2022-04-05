@@ -68,5 +68,4 @@ export default {
   position: relative
   object-fit: cover
   filter: brightness(60%)
-
 </style>
