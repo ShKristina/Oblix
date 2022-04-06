@@ -1,0 +1,53 @@
+.o-header {
+  width: $full-width;
+  position: relative
+}
+
+.o-container {
+  max-width: $full-width;
+}
+
+.o-footer {
+  width: $full-width;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 865px) {
+    height: 150px
+  }
+}
+
+.o-main-button-container {
+  display: block;
+  width: $full-width;
+  margin: 0 auto;
+  background-color: rgba(20, 9, 6, 0.1);
+  top: 401px;
+  position: absolute;
+  height: 99px;
+  @media screen and (max-width: 865px) {
+    height: 82px;
+    top: 378px;
+    @media screen and (max-width: 736px) {
+      top: 258px
+    }
+  }
+}
+.o-button-container {
+  max-width: 1300px;
+  display: flex;
+  height: 99px;
+  @media screen and (max-width: 865px) {
+    height: 82px;
+  }
+}
+
+.o-cuisine-container {
+  display: flex;
+  justify-content: center;
+  font-family: Muli-ExtraBold;
+  @media screen and (max-width: 865px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

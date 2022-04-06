@@ -1,7 +1,7 @@
 <template>
-  <div class="cuisine">
+  <div class="o-cuisine-container">
     <div
-        class="cuisine__button"
+        class="c-cuisine__button"
         v-for="(tab, index) in tabs"
         :key="index"
         :class="['active-menu', { active: this.activeTab === index }]"

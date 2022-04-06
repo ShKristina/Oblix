@@ -1,14 +1,14 @@
 <template>
-    <div class="header">
+    <div class="o-header">
       <ImageRestaurant :activeId="activeId" />
       <ButtonMenu v-on:buttonChange="changeTab" :tabs="tabs" />
     </div>
 
-    <div class="container">
+    <div class="o-container">
      <DataMenu :oblix="oblix" :activeId="activeId"/>
     </div>
 
-    <div class="footer">
+    <div class="o-footer">
       <img src="./assets/images/foot.jpg" class="footer-image">
     </div>
 </template>

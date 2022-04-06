@@ -1,8 +1,8 @@
 <template>
-  <div class="main-container">
-    <div class="main-button">
+  <div class="o-main-button-container">
+    <div class="o-button-container">
       <div
-          class="button"
+          class="c-button"
           v-for="tab in tabs"
           :key="tab"
           :class="['active-button', { active: currentTab === tab }]"
