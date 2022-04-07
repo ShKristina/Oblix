@@ -18,7 +18,7 @@
           src="../assets/images/menus-1.jpg"
           alt="Dish picture"
       />
-      <div class="head-title__temp">
+      <div class="head-title__temp o-main-container">
         <h1 >{{ temp }}</h1>
       </div>
     </div>

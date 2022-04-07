@@ -1,5 +1,5 @@
 <template>
-  <div class="menus-restaurant-main">
+  <div class="menus-restaurant-main o-main-container">
     <div class="main-description">
       <div class="description-content"  v-if="!!activeId">
         {{oblix[activeId].description}}
@@ -49,6 +49,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

@@ -1,8 +1,12 @@
+@import 'generic/generic.reset';
+
 @import "variable";
 @import "fonts";
 @import "elements";
 @import "images";
 @import "tools.media-queries";
+
+
 
 @import "objects/objects.containers";
 @import "objects/objects.page";
