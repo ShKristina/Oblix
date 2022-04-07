@@ -38,34 +38,7 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="scss">
 
-.head-title__temp
-  max-width: 1300px
-  bottom: 145px
-  @media (max-width: 865px)
-    bottom: 125px
-  position: relative
-  height: auto
 
-.head-title
-  height: 500px
-  @media(max-width: 865px)
-    height: 460px
-    @media(max-width: 736px)
-      height: 340px
-  width: 100%
-  margin: 0
-  padding: 0
-
-.restaurant-image
-  width: 100%
-  height: 500px
-  @media(max-width: 865px)
-    height: 460px
-    @media(max-width: 737px)
-      height: 340px
-  position: relative
-  object-fit: cover
-  filter: brightness(60%)
 </style>
