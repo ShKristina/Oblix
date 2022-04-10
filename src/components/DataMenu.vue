@@ -1,24 +1,20 @@
 <template>
-  <div class="menus-restaurant-main o-main-container">
-    <div class="main-description">
-      <div class="description-content"  v-if="!!activeId">
+  <div class="o-restaurant-container o-main-container">
+    <div class="v-main-description">
+      <div class="v-main-description__content"  v-if="!!activeId">
         {{oblix[activeId].description}}
       </div>
     </div>
-    <div class="panel-menu">
-      <div class="panel-menu__cuisine">
-        <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" ref="typeMenu"/>
-      </div>
 
-      <div class="panel-menu__menu" >
-        <div class="page-logotype">
-          <LogoType />
-        </div>
-        <div v-if="!!Object.keys(cuisineItems).length">
-          <MenuItem :cuisineItems="cuisineItems"/>
-        </div>
+    <TypeMenu v-on:menuButtonChange="changeMenuTab" :tabs="tabs" ref="typeMenu"/>
+
+    <div class="v-menu-page" >
+      <LogoType />
+      <div v-if="!!Object.keys(cuisineItems).length">
+        <MenuItem :cuisineItems="cuisineItems"/>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -49,3 +45,36 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.v-main-description {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 865px) {
+    margin-bottom: 70px;
+  }
+
+  &__content {
+    padding-bottom: 24px;
+    letter-spacing: .023em;
+    line-height: 1.5em;
+    font-size: 18px;
+
+    @media screen and (min-width: 865px) {
+      width: 745px;
+      font-size: 21px;
+    }
+  }
+}
+
+.v-menu-page {
+  background-color: $white-color;
+  padding: 70px;
+  padding-top: 48px;
+
+  @media screen and (max-width: 737px) {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+}
+</style>

@@ -5,62 +5,39 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 865px) {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
-
 .o-header {
-  width: $full-width;
   position: relative
 }
 
-.o-container {
-  max-width: $full-width;
-}
-
-.o-footer {
-  width: $full-width;
-  height: 280px;
-  margin: 0;
-  padding: 0;
-  @media screen and (max-width: 865px) {
-    height: 150px
-  }
-}
-
-.o-main-button-container {
-  display: block;
-  width: $full-width;
-  margin: 0 auto;
-  background-color: rgba(20, 9, 6, 0.1);
-  top: 401px;
-  position: absolute;
-  height: 99px;
-  @media screen and (max-width: 865px) {
-    height: 82px;
-    top: 378px;
-    @media screen and (max-width: 736px) {
-      top: 258px
-    }
-  }
-}
-.o-button-container {
+.o-btn-container {
+  margin-bottom: 60px;
   display: flex;
-  height: 99px;
-  @media screen and (max-width: 865px) {
-    height: 82px;
-  }
-}
-
-.o-cuisine-container {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-family: Muli-ExtraBold;
+
   @media screen and (max-width: 865px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
+
+.o-restaurant-container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 865px) {
+    padding-top: 70px;
+    padding-bottom: 91px;
+  }
+}
+
+
+
+
+
