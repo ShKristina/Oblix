@@ -1,5 +1,5 @@
 <template>
-  <div class="o-header">
+  <div class="v-header">
     <ImageRestaurant :activeId="activeId"/>
     <ButtonMenu v-on:buttonChange="changeTab" :tabs="tabs"/>
   </div>
@@ -43,6 +43,9 @@ export default {
 </script>
 
 <style lang="scss">
+.v-header {
+  position: relative
+}
 .v-footer-image {
   height: 280px;
   width: $full-width;

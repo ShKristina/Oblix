@@ -1,5 +1,5 @@
 <template>
-  <div class="o-btn-container">
+  <div class="v-btn-container">
     <button
         class="c-btn"
         v-for="(tab, index) in tabs"
@@ -34,3 +34,17 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.v-btn-container {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media screen and (max-width: 865px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+</style>

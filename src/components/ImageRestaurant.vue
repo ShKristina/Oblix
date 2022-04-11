@@ -2,7 +2,7 @@
     <div class="v-image-restaurant">
         <img
             v-if="activeId === 'bar'"
-            class="v-image-restaurant__image o-header"
+            class="v-image-restaurant__image"
             src="../assets/images/Restaurant-and-Bar.jpg"
             alt="Dish picture"
         />
@@ -18,7 +18,7 @@
           src="../assets/images/menus-1.jpg"
           alt="Dish picture"
       />
-      <div class="v-image-restaurant__title o-main-container o-header">
+      <div class="v-image-restaurant__title o-main-container">
         <h1 >{{ title }}</h1>
       </div>
     </div>
@@ -55,6 +55,7 @@ export default {
     height: 500px;
     object-fit: cover;
     filter: brightness(60%);
+    position: relative;
 
     @media(max-width: 865px) {
       height: 460px;
@@ -67,6 +68,7 @@ export default {
 
   &__title {
     bottom: 145px;
+    position: relative;
 
     @media (max-width: 865px) {
       bottom: 125px
