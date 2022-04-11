@@ -1,14 +1,14 @@
 <template>
-  <div class="cuisine">
-    <div
-        class="cuisine__button"
+  <div class="o-btn-container">
+    <button
+        class="c-btn"
         v-for="(tab, index) in tabs"
         :key="index"
-        :class="['active-menu', { active: this.activeTab === index }]"
+        :class="[{ 'c-btn--active': this.activeTab === index }]"
         @click="changeMenuTab(index)"
     >
       {{ tab }}
-    </div>
+    </button>
   </div>
 </template>
 

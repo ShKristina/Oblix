@@ -1,16 +1,14 @@
+@import 'generic/generic.reset';
+
 @import "variable";
 @import "fonts";
 @import "elements";
-@import "media";
-@import "images";
-@import "global";
 
-@import "components/components.logo";
-@import "components/components.page";
+@import "objects/objects.containers";
+
 @import "components/components.items";
-@import "components/components.menu";
 @import "components/components.buttons";
-@import "components/components.containers.button";
+
 
 
 
