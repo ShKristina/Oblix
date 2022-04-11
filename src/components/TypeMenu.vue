@@ -1,5 +1,5 @@
 <template>
-  <div class="v-btn-container">
+  <div class="v-type-menu">
     <button
         class="c-btn"
         v-for="(tab, index) in tabs"
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
-.v-btn-container {
+.v-type-menu {
   margin-bottom: 60px;
   display: flex;
   flex-direction: row;
